@@ -1,0 +1,119 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #282c34;
+    padding: 20px;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: white;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+/* Fixtures Container */
+.fixtures-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Fixtures Heading */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Individual Fixture */
+.fixture {
+    margin-bottom: 15px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* Fixture Date */
+.fixture-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Fixture Match Details */
+.fixture-match {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team {
+    font-weight: bold;
+}
+
+.score {
+    font-size: 20px;
+    padding: 0 10px;
+}
+
+/* Match Review Link */
+.match-review {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.match-review:hover {
+    text-decoration: underline;
+}
